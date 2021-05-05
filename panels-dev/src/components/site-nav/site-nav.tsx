@@ -11,7 +11,11 @@ export class SiteNav {
       <Host>
         <nav class="nav">
           <div class="line">
-            <button>Menu</button>
+            {/*
+            <div class="menu">
+              <button>Menu</button>
+            </div>
+            */}
             <span class="logo">b·d software</span>
             <div class="actions">
               <button>Search</button>

@@ -1,26 +1,16 @@
 nav {
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 0px auto;
+  padding: 0px 10px;
 }
 
 .nav {
   display: flex;
   flex-direction: column;
-  padding: 0 10px;
-
-  background-color: red;
-}
-
-.nav .logo {
-  position: absolute;
-  transform: translateX(-50%);
-  left: 50%;
 }
 
 .md-nav {
   display: none;
-
-  background-color: orange;
 }
 
 .line {
@@ -43,8 +33,20 @@ nav {
   margin: 20px;
 }
 
+.actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
 .actions button {
   margin-left: 20px;
+}
+
+.actions,
+.menu,
+.logo {
+  width: 30%;
 }
 
 @media (min-width: 768px) {
@@ -54,10 +56,5 @@ nav {
 
   .md-nav {
     display: block;
-  }
-
-  .logo {
-    position: initial;
-    transform: none;
   }
 }
