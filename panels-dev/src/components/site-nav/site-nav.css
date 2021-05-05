@@ -1,7 +1,7 @@
 nav {
   max-width: 1000px;
   margin: 0px auto;
-  padding: 0px 10px;
+  position: relative;
 }
 
 .nav {
@@ -15,6 +15,7 @@ nav {
 
 .line {
   height: 60px;
+  padding: 0px 10px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -47,6 +48,11 @@ nav {
 .menu,
 .logo {
   width: 30%;
+}
+
+.border {
+  width: 100%;
+  border-bottom: 1px solid #00000010;
 }
 
 @media (min-width: 768px) {

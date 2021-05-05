@@ -22,6 +22,7 @@ export class SiteNav {
               <button>Contact</button>
             </div>
           </div>
+          <div class="border"></div>
           <div class="pages">
             <span>Link1</span>
             <span>Link2</span>
