@@ -5,62 +5,72 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
-import { MatchResults } from "@stencil/router";
 export namespace Components {
-    interface AppHome {
-    }
-    interface AppProfile {
-        "match": MatchResults;
-    }
     interface AppRoot {
+    }
+    interface PageHome {
+    }
+    interface PageLabs {
+    }
+    interface SiteNav {
     }
 }
 declare global {
-    interface HTMLAppHomeElement extends Components.AppHome, HTMLStencilElement {
-    }
-    var HTMLAppHomeElement: {
-        prototype: HTMLAppHomeElement;
-        new (): HTMLAppHomeElement;
-    };
-    interface HTMLAppProfileElement extends Components.AppProfile, HTMLStencilElement {
-    }
-    var HTMLAppProfileElement: {
-        prototype: HTMLAppProfileElement;
-        new (): HTMLAppProfileElement;
-    };
     interface HTMLAppRootElement extends Components.AppRoot, HTMLStencilElement {
     }
     var HTMLAppRootElement: {
         prototype: HTMLAppRootElement;
         new (): HTMLAppRootElement;
     };
+    interface HTMLPageHomeElement extends Components.PageHome, HTMLStencilElement {
+    }
+    var HTMLPageHomeElement: {
+        prototype: HTMLPageHomeElement;
+        new (): HTMLPageHomeElement;
+    };
+    interface HTMLPageLabsElement extends Components.PageLabs, HTMLStencilElement {
+    }
+    var HTMLPageLabsElement: {
+        prototype: HTMLPageLabsElement;
+        new (): HTMLPageLabsElement;
+    };
+    interface HTMLSiteNavElement extends Components.SiteNav, HTMLStencilElement {
+    }
+    var HTMLSiteNavElement: {
+        prototype: HTMLSiteNavElement;
+        new (): HTMLSiteNavElement;
+    };
     interface HTMLElementTagNameMap {
-        "app-home": HTMLAppHomeElement;
-        "app-profile": HTMLAppProfileElement;
         "app-root": HTMLAppRootElement;
+        "page-home": HTMLPageHomeElement;
+        "page-labs": HTMLPageLabsElement;
+        "site-nav": HTMLSiteNavElement;
     }
 }
 declare namespace LocalJSX {
-    interface AppHome {
-    }
-    interface AppProfile {
-        "match"?: MatchResults;
-    }
     interface AppRoot {
     }
+    interface PageHome {
+    }
+    interface PageLabs {
+    }
+    interface SiteNav {
+    }
     interface IntrinsicElements {
-        "app-home": AppHome;
-        "app-profile": AppProfile;
         "app-root": AppRoot;
+        "page-home": PageHome;
+        "page-labs": PageLabs;
+        "site-nav": SiteNav;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "app-home": LocalJSX.AppHome & JSXBase.HTMLAttributes<HTMLAppHomeElement>;
-            "app-profile": LocalJSX.AppProfile & JSXBase.HTMLAttributes<HTMLAppProfileElement>;
             "app-root": LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
+            "page-home": LocalJSX.PageHome & JSXBase.HTMLAttributes<HTMLPageHomeElement>;
+            "page-labs": LocalJSX.PageLabs & JSXBase.HTMLAttributes<HTMLPageLabsElement>;
+            "site-nav": LocalJSX.SiteNav & JSXBase.HTMLAttributes<HTMLSiteNavElement>;
         }
     }
 }
